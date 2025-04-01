@@ -8,7 +8,7 @@ export const Todoitem = ({ todo, ondeletetodo, ontoggletodo }) => {
       
       <div>
         <span 
-          className={`p-2 text-xl font-bold ${todo.done ? "underline" : ""} mb-2`}
+          className={`p-2 text-xl font-bold ${todo.done ? "underline"  : ""} `}
           onClick={() => ontoggletodo(todo.id)}
         >
           {todo.nombre}
@@ -24,6 +24,11 @@ export const Todoitem = ({ todo, ondeletetodo, ontoggletodo }) => {
           {todo.description}
         </span>
       </div>
+      {todo.done && 
+        <p className="text-green-600 text-sm mt-2 animate-pulse">
+          ✔ Tarea completada
+        </p>
+      }
       
     
       <button

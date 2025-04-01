@@ -14,8 +14,9 @@ const init = () => {
 export const usetodo = () => {
 
         
-        const [todos, dispatch] = useReducer( todoreducer, [], init );
+        const [todos , dispatch] = useReducer( todoreducer, [], init );
         const { counter, increment, decrement } = useCounter(todos.length);
+        
             useEffect(() => {
               localStorage.setItem('todos', JSON.stringify( todos ))
             }, [todos])

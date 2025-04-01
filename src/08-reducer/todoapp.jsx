@@ -16,13 +16,13 @@ export const Todoapp = () => {
             
             
             <h2 className="text-2xl font-bold text-center">
-                Tareas <span className="text-black-500">({counter})</span>
+                ✔Tareas <span className="text-black-500">({counter})</span>
             </h2>
 
             <div className="w-full flex gap-8">
                 
                 <div className="w-1/3 bg-gray-100 rounded-lg shadow-lg p-6 flex-shrink-0 h-fit">
-                    <h4 className="text-lg font-bold italic ml-4 mb-4">Agregar Nueva Tarea</h4>
+                    <h4 className="text-lg font-bold italic ml-4 mb-4">Agregar Nueva Tarea📚</h4>
                     
                     <Todoadd onnewtodo={handlenewtodo} />
                 </div>
