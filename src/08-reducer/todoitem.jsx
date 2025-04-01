@@ -24,8 +24,9 @@ export const Todoitem = ({ todo, ondeletetodo, ontoggletodo }) => {
           {todo.description}
         </span>
       </div>
+
       {todo.done && 
-        <p className="text-green-600 text-sm mt-2 animate-pulse">
+        <p className="text-green-600 text-sm mt-2 ">
           ✔ Tarea completada
         </p>
       }
